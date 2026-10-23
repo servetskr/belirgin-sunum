@@ -1,0 +1,562 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Belirgin · Uçtan uca marka iletişimi</title>
+<meta name="description" content="Kimlik, uygulama, ürün görselleştirme, dijital ve yapay zekâ; 22 yıllık deneyimle tek elden.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Belirgin · Uçtan uca marka iletişimi">
+<meta property="og:description" content="Kimlik, uygulama, ürün görselleştirme, dijital ve yapay zekâ; 22 yıllık deneyimle tek elden.">
+<meta property="og:image" content="https://servetskr.github.io/belirgin-sunum/og.jpg"><meta property="og:type" content="website">
+<meta name="theme-color" content="#232323">
+<script>if("IntersectionObserver" in window)document.documentElement.className+=" js";</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--koyu:#232323;--koyu2:#2E2E2E;--lime:#BCCB0A;--beyaz:#fff;--zemin:#F4F5F2;--gri:#85857F;--metin:#3A3A38;--cizgi:#E4E4DF;--k:clamp(20px,5vw,96px)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:'Manrope',sans-serif;color:var(--koyu);background:var(--beyaz);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.kap{max-width:1400px;margin:0 auto;padding:0 var(--k)}
+/* üst çubuk */
+.ust{position:fixed;inset:0 0 auto;z-index:50;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--k);background:rgba(35,35,35,.92);backdrop-filter:blur(10px);color:#fff}
+.ust .marka{font-weight:800;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.ust .marka i{width:9px;height:9px;border-radius:50%;background:var(--lime)}
+.ust nav{display:flex;gap:26px;font-size:15px;font-weight:600}
+.ust nav a{text-decoration:none;color:#CFCFCA}.ust nav a:hover,.ust nav a.aktif{color:var(--lime)}
+@media(max-width:900px){.ust nav{display:none}}
+.ilerleme{position:fixed;left:0;top:64px;height:3px;background:var(--lime);z-index:51;width:0}
+/* bölümler */
+section{padding:clamp(72px,10vw,140px) 0;position:relative}
+.koyu{background:var(--koyu);color:#fff}.zemin{background:var(--zemin)}
+h1{font-size:clamp(46px,8vw,128px);font-weight:800;letter-spacing:-.04em;line-height:.95}
+h2{font-size:clamp(34px,5vw,72px);font-weight:800;letter-spacing:-.03em;line-height:1.03}
+h3{font-size:clamp(24px,2.6vw,36px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.giris{font-size:clamp(18px,1.7vw,26px);line-height:1.5;color:var(--metin);font-weight:500;max-width:760px}
+.koyu .giris{color:#D6D6D2}
+.etiket{font-size:15px;font-weight:800;color:var(--lime);letter-spacing:.04em}
+.zemin .etiket,section:not(.koyu) .etiket{color:#7C8600}
+.not{font-size:15px;color:var(--gri);font-weight:600;margin-top:12px}
+.bas{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,56px)}
+.bas .giris{max-width:560px}
+.ust-bosluk{margin-top:clamp(56px,7vw,110px)}
+.rakamlar{background:var(--lime);color:#1b1b1b;padding:clamp(28px,4vw,48px) 0}
+.rakam-izgara{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+@media(max-width:900px){.rakam-izgara{grid-template-columns:repeat(3,1fr);row-gap:26px}}
+.rakam-izgara b{display:block;font-size:clamp(40px,5vw,76px);font-weight:800;letter-spacing:-.04em;line-height:1}
+.rakam-izgara span{font-size:clamp(13px,1.1vw,16px);font-weight:700;opacity:.75}
+/* kahraman */
+.kahraman{min-height:100svh;padding:0;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#111}
+.arka{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.perde{position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,14,14,.78) 0%,rgba(14,14,14,.45) 50%,rgba(14,14,14,.05) 85%),linear-gradient(0deg,rgba(14,14,14,.85) 0%,rgba(14,14,14,.2) 50%,rgba(14,14,14,.3) 100%)}
+@media(max-width:700px){.perde{background:linear-gradient(0deg,rgba(14,14,14,.95) 0%,rgba(14,14,14,.6) 55%,rgba(14,14,14,.25) 100%)}}
+.kahraman-ic{position:relative;z-index:2;width:100%;padding-bottom:clamp(48px,7vw,96px);padding-top:120px}
+.kahraman h1{font-size:clamp(54px,10vw,168px);margin:22px 0 26px;text-shadow:0 4px 40px rgba(0,0,0,.35)}
+.kahraman .giris{color:#EDEDEA;font-size:clamp(18px,1.9vw,28px)}
+.marka-satir{display:flex;align-items:center;gap:12px;font-weight:800;font-size:clamp(16px,1.4vw,20px)}
+.marka-satir i{width:11px;height:11px;border-radius:50%;background:var(--lime)}
+.marka-satir span{color:#E6E6E1;font-weight:600}
+.kahraman-alt{display:flex;align-items:center;gap:30px;flex-wrap:wrap;margin-top:40px}
+.serit-isler{display:flex;gap:10px;flex-wrap:wrap}
+.serit-isler span{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:700;color:#E2E2DD;backdrop-filter:blur(6px);background:rgba(255,255,255,.06)}
+.dugme{display:inline-flex;align-items:center;gap:12px;background:var(--lime);color:#1d1d1d;border:0;border-radius:999px;padding:16px 28px;font:800 17px 'Manrope';text-decoration:none;cursor:pointer;align-self:flex-start}
+.dugme.cizgi{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+/* ızgaralar */
+.izgara{display:grid;gap:clamp(8px,1.2vw,18px)}
+.i2{grid-template-columns:repeat(2,1fr)}.i3{grid-template-columns:repeat(3,1fr)}.i4{grid-template-columns:repeat(4,1fr)}.i5{grid-template-columns:repeat(5,1fr)}.i6{grid-template-columns:repeat(6,1fr)}
+@media(max-width:900px){.i3,.i4,.i5,.i6{grid-template-columns:repeat(2,1fr)}}
+.kare{border-radius:clamp(10px,1.3vw,20px);overflow:hidden;background:#ddd;position:relative;cursor:zoom-in}
+.kare img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.kare:hover img{transform:scale(1.04)}
+.kare figcaption,.alt-yazi{font-size:14px;font-weight:700;color:var(--gri);margin-top:10px}
+.y43{aspect-ratio:4/3}.y34{aspect-ratio:3/4}.y916{aspect-ratio:9/16}.y11{aspect-ratio:1}.y45{aspect-ratio:4/5}.y169{aspect-ratio:16/9}
+.genis2{grid-column:span 2}.uzun2{grid-row:span 2}
+/* ara başlık */
+.ara{min-height:92svh;display:flex;align-items:flex-end;padding:0;color:#fff;overflow:hidden}
+.ara>img,.ara>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ara::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,18,18,.9),rgba(18,18,18,.15) 70%)}
+.ara .kap{position:relative;z-index:2;padding-bottom:clamp(56px,8vw,110px);width:100%}
+.ara h2{font-size:clamp(56px,9vw,140px);margin:16px 0 18px}
+.ara .giris{color:#E6E6E1}
+.ara .etk{margin-top:22px;font-size:16px;color:#BDBDB8;font-weight:600}
+/* sayılar */
+.sayilar{display:flex;gap:clamp(30px,6vw,90px);flex-wrap:wrap}
+.sayi{font-size:clamp(80px,12vw,180px);font-weight:800;letter-spacing:-.05em;line-height:.85}
+.sayi+p{font-size:20px;font-weight:700;margin-top:12px}
+/* listeler */
+.gruplar{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+@media(max-width:900px){.gruplar{grid-template-columns:1fr 1fr}}
+.gruplar h4{font-size:20px;font-weight:800;color:var(--lime);margin-bottom:12px}
+.gruplar p{font-size:17px;line-height:1.8;color:#D6D6D2;font-weight:500}
+.satir{display:grid;grid-template-columns:minmax(160px,320px) 1fr;gap:30px;padding:24px 0;border-top:2px solid var(--cizgi);font-size:clamp(17px,1.5vw,22px)}
+.satir:last-child{border-bottom:2px solid var(--cizgi)}
+.satir b{font-weight:800}.satir span{color:var(--metin);font-weight:500;line-height:1.5}
+.koyu .satir{border-color:#3C3C3A}.koyu .satir span{color:#CFCFCA}
+@media(max-width:700px){.satir{grid-template-columns:1fr;gap:8px}}
+.adimlar{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+@media(max-width:900px){.adimlar{grid-template-columns:1fr 1fr}}
+.adimlar .kare{aspect-ratio:3/4}
+.adimlar small{display:block;font-weight:800;color:var(--gri);margin-top:16px}
+.adimlar h4{font-size:21px;font-weight:800;margin-top:6px}
+.adimlar p{font-size:15px;line-height:1.5;color:var(--metin);margin-top:6px;font-weight:500}
+/* önce/sonra */
+.oncesonra{display:grid;grid-template-columns:1fr auto 2fr;gap:24px;align-items:center}
+.oncesonra .okk{font-size:56px;font-weight:800;color:var(--lime)}
+@media(max-width:900px){.oncesonra{grid-template-columns:1fr}.oncesonra .okk{transform:rotate(90deg);justify-self:center}}
+/* çerçeveler */
+.tarayici{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.22)}
+.tarayici .cubuk{height:38px;background:#EDEDEA;display:flex;align-items:center;gap:8px;padding:0 16px}
+.tarayici .cubuk i{width:11px;height:11px;border-radius:50%;background:#CFCFCA}
+.tarayici .cubuk span{margin-left:16px;font-size:13px;color:#8a8a85;font-weight:600}
+.tel{border-radius:38px;background:#0E0E0E;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.28)}
+.tel>div{border-radius:30px;overflow:hidden;position:relative;background:#fff;aspect-ratio:9/19.5}
+.tel>div>img,.tel>div>video{width:100%;height:100%;object-fit:cover}
+.teller{display:flex;gap:clamp(10px,2vw,26px);justify-content:center;flex-wrap:wrap}
+.teller .tel{width:clamp(150px,22vw,280px)}
+/* video ızgarası */
+.vid{border-radius:20px;overflow:hidden;background:#111;position:relative}
+.vid video{width:100%;height:100%;object-fit:cover}
+/* DM */
+.dm{display:flex;flex-direction:column;gap:10px;padding:14px}
+.b{max-width:80%;padding:11px 15px;border-radius:20px;font-size:15px;line-height:1.4;font-weight:500}
+.b.m{align-self:flex-start;background:#EFEFEF;color:#111;border-bottom-left-radius:6px}
+.b.a{align-self:flex-end;background:var(--lime);color:#1b1b1b;border-bottom-right-radius:6px}
+.b.k{align-self:flex-end;background:#3A3A3A;color:#fff;border-bottom-right-radius:6px}
+.sistem{align-self:center;font-size:12px;font-weight:800;color:#5d6500;background:#F1F5C9;border-radius:10px;padding:5px 10px}
+.saat{align-self:center;font-size:12px;color:#999;font-weight:700}
+.igust{display:flex;align-items:center;gap:10px;padding:40px 14px 12px;border-bottom:1px solid #eee;color:#111}
+.igust .av{width:32px;height:32px;border-radius:50%;background:var(--lime);display:grid;place-items:center;font-weight:800;font-size:14px}
+.igust b{font-size:14px;display:block}.igust small{font-size:11px;color:#8e8e8e;font-weight:600}
+.dmekran{display:flex;flex-direction:column;height:100%}
+.dmekran .dm{margin-top:auto}
+.kanallar{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.kanallar{grid-template-columns:1fr}}
+.kanal{background:#fff;border-radius:22px;padding:28px}
+.kanal h4{font-size:22px;font-weight:800}.kanal p{font-size:16px;color:var(--metin);line-height:1.5;margin:8px 0 14px;font-weight:500}
+.kanal .dm{padding:0}
+.tablo{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.08);font-size:15px}
+.tablo div{display:grid;grid-template-columns:1fr 1fr 1.4fr .8fr;padding:14px 22px;border-top:1px solid #eee;font-weight:600}
+.tablo div:first-child{background:#F6F6F3;color:var(--gri);font-size:12px;font-weight:800;border:0}
+.rozet{display:inline-block;font-size:12px;font-weight:800;padding:4px 10px;border-radius:9px;background:#F1F5C9;color:#5d6500}
+.rozet.g{background:#EEE;color:#666}
+.sek{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.sek{grid-template-columns:1fr}}
+.sek article{background:#fff;border-radius:22px;overflow:hidden}
+.sek article .kare{border-radius:0;aspect-ratio:16/10;cursor:default}
+.sek article div.ic{padding:22px 24px 26px}
+.sek h4{font-size:21px;font-weight:800}.sek p{font-size:15px;color:var(--metin);margin-top:6px;line-height:1.5;font-weight:500}
+.sek small{display:block;margin-top:10px;font-size:12px;font-weight:800;color:#6F7600;letter-spacing:.04em}
+.desen{display:grid;grid-template-columns:repeat(12,1fr);gap:6px}
+@media(max-width:900px){.desen{grid-template-columns:repeat(6,1fr)}}
+.desen img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px}
+.mesaj{background:#fff;border-radius:22px;padding:28px 30px;font-size:clamp(17px,1.6vw,22px);line-height:1.55;font-weight:500;color:var(--metin);box-shadow:0 20px 50px rgba(0,0,0,.06)}
+.mesaj b{display:block;font-size:13px;color:var(--gri);margin-bottom:10px;font-weight:800}
+.sonraki{display:flex;justify-content:center;margin-top:clamp(50px,6vw,90px)}
+.sonraki button{background:none;border:2px solid currentColor;color:inherit;border-radius:999px;padding:12px 22px;font:700 15px 'Manrope';cursor:pointer;opacity:.7}
+.sonraki button:hover{opacity:1}
+footer{background:#161616;color:#9C9C97;padding:40px var(--k);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+/* büyüteç */
+.buyutec{position:fixed;inset:0;z-index:100;background:rgba(10,10,10,.94);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.buyutec.acik{opacity:1;pointer-events:auto}
+.buyutec img{max-width:92vw;max-height:84vh;border-radius:10px;object-fit:contain}
+.buyutec button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:52px;height:52px;border-radius:50%;font-size:22px;cursor:pointer}
+.buyutec .kapat{top:18px;right:18px}.buyutec .ger{left:18px;top:50%}.buyutec .ile{right:18px;top:50%}
+.buyutec p{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#ccc;font-size:14px;font-weight:600}
+.ikili{display:grid;grid-template-columns:minmax(260px,1fr) 2fr;gap:clamp(30px,6vw,90px);align-items:start}
+@media(max-width:700px){.ikili{grid-template-columns:1fr}.desen img:nth-child(n+49){display:none}}
+@media(max-width:800px){.izgara[style*="grid-template-columns"]{grid-template-columns:1fr!important}.tel{max-width:300px!important}}
+.js .gor{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.js .gor.var{opacity:1;transform:none}
+</style></head><body>
+
+<header class="ust"><a class="marka" href="#basla"><i></i>Belirgin</a>
+<nav><a href="#belirgin">Belirgin</a><a href="#donerus">Dönerus</a><a href="#ayna">Taş Ayna</a><a href="#inmod">InMod</a><a href="#dengchat">DengChat</a><a href="#dijital">Dijital</a><a href="#sektorler">Sektörler</a></nav></header>
+<div class="ilerleme" id="ilerleme"></div>
+
+<main>
+<!-- KAHRAMAN -->
+<section class="kahraman" id="basla">
+  <video class="arka" id="kahVid" muted loop playsinline preload="none"></video><img class="arka" id="kahPoster" src="v/kahraman.webp" alt="" fetchpriority="high">
+  <div class="perde"></div>
+  <div class="kap kahraman-ic">
+    <div class="marka-satir"><i></i>Belirgin <span>Marka İletişimi · 22 yıl</span></div>
+    <h1>Uçtan uca<br>marka iletişimi</h1>
+    <p class="giris">Kimlik, uygulama, ürün görselleştirme, dijital ve yapay zekâ; tek elden.</p>
+    <div class="kahraman-alt"><a class="dugme" href="#belirgin">Sunumu başlat ↓</a>
+      <div class="serit-isler"><span>Dönerus</span><span>Taş Ayna</span><span>InMod</span><span>DengChat</span><span>Elnar</span><span>MODE</span></div></div>
+  </div>
+</section>
+
+<section class="rakamlar" aria-label="Rakamlarla"><div class="kap rakam-izgara">
+  <div><b data-say="22">22</b><span>yıllık deneyim</span></div>
+  <div><b data-say="144">144</b><span>ayna deseni</span></div>
+  <div><b data-say="189">189</b><span>ürün görsel seti</span></div>
+  <div><b data-say="90">90</b><span>InMod üretimi</span></div>
+  <div><b data-say="37">37</b><span>ürün videosu</span></div>
+  <div><b data-say="14">14</b><span>hazır çekim mekânı</span></div>
+</div></section>
+
+<!-- BELİRGİN -->
+<section class="koyu" id="belirgin"><div class="kap">
+  <div class="ikili gor">
+    <div><div class="sayi" style="color:var(--lime)">22</div><p style="font-size:24px;font-weight:800">yıllık deneyim</p></div>
+    <div><p class="giris" style="font-size:clamp(20px,2vw,30px);color:#EDEDEA">Belirgin, markaların sahada görünen her yüzünü tasarlar, üretir ve uygular: tabeladan araç kaplamaya, matbaadan dijitale.</p>
+    <p class="giris" style="margin-top:20px;color:#A9A9A4">Bugün bu deneyimi yapay zekâ destekli görsel üretim ve müşteri iletişimi otomasyonuyla birleştiriyor.</p></div>
+  </div>
+  <div class="gruplar ust-bosluk gor">
+    <div><h4>Kimlik ve tasarım</h4><p>Logo ve kurumsal kimlik<br>Basılı işler, katalog<br>Ambalaj ve etiket<br>Franchise kiti</p></div>
+    <div><h4>Uygulama ve üretim</h4><p>Işıklı, ışıksız tabela<br>Totem, pylon, kutu harf<br>Cephe ve araç kaplama<br>LED ekran, açık hava</p></div>
+    <div><h4>Dijital</h4><p>Web sitesi ve QR menü<br>Mobil uygulama<br>Sosyal medya yönetimi<br>Dijital pazarlama</p></div>
+    <div><h4>Yapay zekâ</h4><p>Ürün ve kampanya görseli<br>Ürün videoları<br>Ürün görselleştirme<br>7/24 mesaj asistanı</p></div>
+  </div>
+</div></section>
+
+<!-- SÜREÇ -->
+<section class="zemin" id="surec"><div class="kap">
+  <div class="bas gor"><h2>Fikirden sahaya, tek ekip</h2><p class="giris">Her aşama aynı ekipte; marka dili ilk taslaktan tabelaya kadar bozulmaz.</p></div>
+  <div class="adimlar gor">
+    <div><div class="kare" style="background:#E1261C;display:grid;place-items:center;cursor:default"><img src="k/dn_logo.webp" style="width:80%;height:auto;object-fit:contain" alt=""></div><small>01</small><h4>Kimlik</h4><p>Logo, renk, yazı ve kullanım kuralları.</p></div>
+    <div><div class="kare" data-g="surec"><img loading="lazy" src="k/dn_g_kirtasiye.webp" alt="Kırtasiye seti"></div><small>02</small><h4>Tasarım</h4><p>Basılı işler, ambalaj, menü, katalog.</p></div>
+    <div><div class="kare" data-g="surec"><img loading="lazy" src="k/ay_p3.webp" alt="Ayna detayı"></div><small>03</small><h4>Görselleştirme</h4><p>Ürün ve mekân, üretilmeden önce görülür.</p></div>
+    <div><div class="kare" data-g="surec"><img loading="lazy" src="k/dn_tabela.webp" alt="Tabela"></div><small>04</small><h4>Uygulama</h4><p>Tabela, cephe, araç, fuar standı.</p></div>
+    <div><div class="kare" data-g="surec"><img loading="lazy" src="k/w_dn_ana_m.webp" style="object-position:50% 0" alt="Web sitesi"></div><small>05</small><h4>Dijital ve yapay zekâ</h4><p>Web, sosyal medya, AI içerik, mesaj asistanı.</p></div>
+  </div>
+  <div class="sonraki"><button data-sonraki>Sonraki: Dönerus ↓</button></div>
+</div></section>
+
+<!-- DÖNERUS -->
+<section class="ara" id="donerus"><video class="arka" muted loop playsinline preload="none" data-poster="a/dn_cephe.webp" data-oto><source src="v/b_cephe.mp4" type="video/mp4"></video>
+  <div class="kap"><div class="etiket" style="color:var(--lime)">01 · YEME-İÇME</div><h2>Dönerus</h2><p class="giris">İskenderun döneri için ulusal franchise markası önerisi.</p><div class="etk">Kimlik · basılı işler · mekân · ambalaj · web · sosyal medya · franchise kiti</div></div></section>
+
+<section><div class="kap">
+  <div class="bas gor"><h2>İştah açan, canlı bir kimlik</h2><p class="giris">Ateş kırmızısı, hardal ve sos turuncusu; her temas noktasında aynı enerji.</p></div>
+  <div class="izgara i4 gor">
+    <div class="kare y43" style="background:#E1261C;display:grid;place-items:center;cursor:default"><img src="k/dn_logo.webp" style="width:82%;height:auto;object-fit:contain" alt="Dönerus logosu"></div>
+    <div class="kare y43" data-g="kimlik"><img loading="lazy" src="k/dn_g_kirtasiye.webp" alt="Kırtasiye"></div>
+    <div class="kare y43" data-g="kimlik"><img loading="lazy" src="k/dn_g_kartvizit.webp" alt="Kartvizit"></div>
+    <div class="kare y43" data-g="kimlik"><img loading="lazy" src="k/dn_g_menu.webp" alt="Menü"></div>
+    <div class="kare y43" data-g="kimlik"><img loading="lazy" src="k/dn_g_brosur.webp" alt="Broşür"></div>
+    <div class="kare y43" data-g="kimlik"><img loading="lazy" src="k/dn_g_dosya.webp" alt="Sunum dosyası"></div>
+    <div class="kare y43" data-g="kimlik"><img loading="lazy" src="k/dn_g_lightbox.webp" alt="Lightbox"></div>
+    <div class="kare y43" data-g="kimlik"><img loading="lazy" src="k/dn_g_rehber.webp" alt="Yatırımcı rehberi"></div>
+  </div>
+</div></section>
+
+<section class="zemin"><div class="kap">
+  <div class="bas gor"><h2>Mekân, tabela, araç ve fuar</h2><p class="giris">Cephe, iç mekân, servis aracı, AVM birimi ve franchise fuarı; her şubede aynı kimlik.</p></div>
+  <div class="izgara i3 gor">
+    <div class="kare y43 genis2 uzun2" data-g="mekan"><img loading="lazy" src="k/dn_ic_mekan.webp" alt="İç mekân"></div>
+    <div class="kare y43" data-g="mekan"><img loading="lazy" src="k/dn_tabela.webp" alt="Tabela"></div>
+    <div class="kare y43" data-g="mekan"><img loading="lazy" src="k/dn_avm.webp" alt="AVM birimi"></div>
+    <div class="kare y43" data-g="mekan"><img loading="lazy" src="k/dn_arac.webp" alt="Araç kaplama"></div>
+    <div class="kare y43" data-g="mekan"><img loading="lazy" src="k/dn_fuar.webp" alt="Fuar standı"></div>
+    <div class="kare y43" data-g="mekan"><img loading="lazy" src="k/dn_gastro.webp" alt="Gastro duvar"></div>
+    <div class="kare y43" data-g="mekan"><img loading="lazy" src="k/dn_akademi.webp" alt="Eğitim akademisi"></div>
+    <div class="kare y43" data-g="mekan"><img loading="lazy" src="k/dn_cephe.webp" alt="Cephe"></div>
+    <div class="kare y43" data-g="mekan"><img loading="lazy" src="k/dn_durum.webp" alt="Dürüm"></div>
+  </div>
+</div></section>
+
+<section><div class="kap">
+  <div class="bas gor"><h2>Ambalaj, ekip ve ürün</h2><p class="giris">Paketten önlüğe, kurye kutusundan menü fotoğraflarına.</p></div>
+  <div class="izgara i4 gor">
+    <div class="kare y34" data-g="ambalaj"><img loading="lazy" src="k/dn_ambalaj.webp" alt="Ambalaj"></div>
+    <div class="kare y34" data-g="ambalaj"><img loading="lazy" src="k/dn_personel.webp" alt="Ekip kıyafeti"></div>
+    <div class="kare y34" data-g="ambalaj"><img loading="lazy" src="k/dn_s_kurye.webp" alt="Kurye"></div>
+    <div class="kare y34" data-g="ambalaj"><img loading="lazy" src="k/dn_promosyon.webp" alt="Promosyon"></div>
+    <div class="kare y34" data-g="ambalaj"><img loading="lazy" src="k/dn_usta.webp" alt="Usta"></div>
+    <div class="kare y34" data-g="ambalaj"><img loading="lazy" src="k/dn_j1_durum_ucan.webp" alt="Dürüm"></div>
+    <div class="kare y34" data-g="ambalaj"><img loading="lazy" src="k/dn_j2_iskender_tepe.webp" alt="İskender"></div>
+    <div class="kare y34" data-g="ambalaj"><img loading="lazy" src="k/dn_j3_doner_ates.webp" alt="Döner"></div>
+  </div>
+</div></section>
+
+<section class="koyu"><div class="kap">
+  <div class="bas gor"><h2>Canlı web sitesi, QR menü ve başvuru paneli</h2><p class="giris">Menü, şubeler, franchise başvurusu ve masadaki QR menü; telefondan ilk açılışta hızlı. Başvurular franchise ekibinin panelinde toplanır.</p></div>
+  <div class="tarayici gor" data-g="web" style="cursor:zoom-in"><div class="cubuk"><i></i><i></i><i></i><span>Dönerus · web sitesi</span></div><img loading="lazy" src="k/w_dn_ana.webp" alt="Dönerus ana sayfa"></div>
+  <div class="teller ust-bosluk gor">
+    <div class="tel"><div data-g="web" style="cursor:zoom-in"><img loading="lazy" src="k/w_dn_menu_m.webp" style="object-position:50% 0" alt="Menü"></div></div>
+    <div class="tel"><div data-g="web" style="cursor:zoom-in"><img loading="lazy" src="k/w_dn_qr_m.webp" style="object-position:50% 0" alt="QR menü"></div></div>
+    <div class="tel"><div data-g="web" style="cursor:zoom-in"><img loading="lazy" src="k/w_dn_franchise_m.webp" style="object-position:50% 0" alt="Franchise"></div></div>
+    <div class="tel"><div data-g="web" style="cursor:zoom-in"><img loading="lazy" src="k/w_dn_panel_m.webp" style="object-position:50% 0" alt="Başvuru paneli"></div></div>
+  </div>
+</div></section>
+
+<section class="zemin"><div class="kap">
+  <div class="bas gor"><h2>Sosyal medya ve franchise kiti</h2><p class="giris">Paylaşım şablonları, profil düzeni, yatırımcı rehberi ve başvuru formu.</p></div>
+  <div class="izgara i6 gor">
+    <div class="kare y45" data-g="sosyal"><img loading="lazy" src="k/dn_duz_post1.webp" alt=""></div>
+    <div class="kare y45" data-g="sosyal"><img loading="lazy" src="k/dn_duz_post2.webp" alt=""></div>
+    <div class="kare y45" data-g="sosyal"><img loading="lazy" src="k/dn_duz_post3.webp" alt=""></div>
+    <div class="kare y45" data-g="sosyal"><img loading="lazy" src="k/dn_duz_post4.webp" alt=""></div>
+    <div class="kare y45" data-g="sosyal"><img loading="lazy" src="k/dn_duz_post5.webp" alt=""></div>
+    <div class="kare y45" data-g="sosyal"><img loading="lazy" src="k/dn_duz_post6.webp" alt=""></div>
+  </div>
+  <div class="izgara i4 ust-bosluk gor" style="margin-top:18px">
+    <div class="kare y34" data-g="kit"><img loading="lazy" src="k/dn_duz_rehber_kapak.webp" alt="Yatırımcı rehberi"></div>
+    <div class="kare y34" data-g="kit"><img loading="lazy" src="k/dn_duz_rehber_ic.webp" alt="Rehber iç sayfa"></div>
+    <div class="kare y34" data-g="kit"><img loading="lazy" src="k/dn_duz_menu.webp" alt="Menü"></div>
+    <div class="kare y34" data-g="kit"><img loading="lazy" src="k/dn_duz_ig_profil.webp" style="object-position:50% 0" alt="Instagram profili"></div>
+  </div>
+  <div class="sonraki"><button data-sonraki>Sonraki: Taş Ayna ↓</button></div>
+</div></section>
+
+<!-- AYNA -->
+<section class="ara" id="ayna"><video class="arka" muted loop playsinline preload="none" data-poster="a/ay_p1.webp" data-oto><source src="v/b_ayna.mp4" type="video/mp4"></video>
+  <div class="kap"><div class="etiket" style="color:var(--lime)">02 · EV VE DEKORASYON</div><h2>Taş Ayna</h2><p class="giris">Doğal taş çerçeveli ayna serisi için satışa hazır ürün görselleri.</p><div class="etk">Ürün görselleştirme · desen uygulama · e-ticaret görselleri</div></div></section>
+
+<section class="zemin"><div class="kap">
+  <div class="bas gor"><h2>Boş çerçeveden satış görseline</h2><p class="giris">Desen, gerçek ölçüye ve taş dizilimine sadık kalarak ürüne uygulanır.</p></div>
+  <div class="oncesonra gor">
+    <div><div class="kare y34" data-g="ayna"><img loading="lazy" src="k/ay_ham.webp" alt="Atölyeden gelen fotoğraf"></div><p class="alt-yazi">Atölyeden gelen fotoğraf</p></div>
+    <div class="okk">→</div>
+    <div class="izgara i2"><div><div class="kare y34" data-g="ayna"><img loading="lazy" src="k/ay_p2.webp" alt="Duvarda"></div><p class="alt-yazi">Duvarda</p></div><div><div class="kare y34" data-g="ayna"><img loading="lazy" src="k/ay_p4.webp" alt="Beyaz fon"></div><p class="alt-yazi">Beyaz fon</p></div></div>
+  </div>
+  <div class="izgara i4 ust-bosluk gor">
+    <div class="kare y11" data-g="ayna"><img loading="lazy" src="k/ay_rev_01.webp" alt="Antre"></div>
+    <div class="kare y11" data-g="ayna"><img loading="lazy" src="k/ay_rev_02.webp" alt="Banyo"></div>
+    <div class="kare y11" data-g="ayna"><img loading="lazy" src="k/ay_rev_03.webp" alt="Salon"></div>
+    <div class="kare y11" data-g="ayna"><img loading="lazy" src="k/ay_p3.webp" alt="Köşe detayı"></div>
+  </div>
+</div></section>
+
+<section class="koyu"><div class="kap">
+  <div class="bas gor"><div><h2>Yüzlerce desen, tek kalite</h2><div class="sayilar" style="margin-top:36px"><div><div class="sayi" style="color:var(--lime)">144</div><p>desen tasarımı</p></div><div><div class="sayi">189</div><p>ürün görsel seti</p></div></div></div><p class="giris">İki ebatta; her desen için oda, duvar, beyaz fon ve detay görselleri, aynı kalite kontrolünden geçerek.</p></div>
+  <div class="desen gor" id="desen"></div>
+  <div class="sonraki"><button data-sonraki>Sonraki: InMod ↓</button></div>
+</div></section>
+
+<!-- INMOD -->
+<section class="ara" id="inmod"><video class="arka" muted loop playsinline preload="none" data-poster="a/im_ceket_sokak.webp" data-oto><source src="v/inmod_hero.mp4" type="video/mp4"></video>
+  <div class="kap"><div class="etiket" style="color:var(--lime)">03 · MODA</div><h2>InMod</h2><p class="giris">Butikler ve moda markaları için yapay zekâ çekim stüdyosu.</p><div class="etk">Manken çekimi · kampanya görselleri · ürün videoları</div></div></section>
+
+<section class="zemin"><div class="kap">
+  <div class="bas gor"><h2>Telefonla çekilmiş tek bir fotoğraftan dört mekânda çekim</h2><p class="giris">Stüdyo, fotoğrafçı, model ve mekân kiralamadan; ürünün kendisi korunarak.</p></div>
+  <div class="oncesonra gor">
+    <div><div class="kare y34" data-g="inmod"><img loading="lazy" src="k/im_girdi_ceket.webp" alt="Butiğin gönderdiği fotoğraf"></div><p class="alt-yazi">Butiğin gönderdiği fotoğraf</p></div>
+    <div class="okk">→</div>
+    <div class="izgara i4">
+      <div class="kare y916" data-g="inmod"><img loading="lazy" src="k/im_ceket_sokak.webp" alt="Sokak"></div>
+      <div class="kare y916" data-g="inmod"><img loading="lazy" src="k/im_ceket_loft.webp" alt="Loft"></div>
+      <div class="kare y916" data-g="inmod"><img loading="lazy" src="k/im_ceket_butik.webp" alt="Butik"></div>
+      <div class="kare y916" data-g="inmod"><img loading="lazy" src="k/im_ceket_aksam.webp" alt="Akşam şehir"></div>
+    </div>
+  </div>
+  <div class="izgara i2 ust-bosluk gor" style="max-width:820px">
+    <div><div class="kare y916" data-g="hayalet" style="background:#fff"><img loading="lazy" src="k/im_hayalet_on.webp" alt="Hayalet manken ön" style="object-fit:contain"></div><p class="alt-yazi">Hayalet manken · ön</p></div>
+    <div><div class="kare y916" data-g="hayalet" style="background:#fff"><img loading="lazy" src="k/im_hayalet_arka.webp" alt="Hayalet manken arka" style="object-fit:contain"></div><p class="alt-yazi">Hayalet manken · arka</p></div>
+  </div>
+</div></section>
+
+<section class="koyu"><div class="kap">
+  <div class="bas gor"><h2>Sosyal medya için ürün videoları</h2><p class="giris">Sekiz saniyelik dikey videolar; Reels, TikTok ve hikâyeler için hazır.</p></div>
+  <div class="izgara i3 gor" style="max-width:1000px;margin:0 auto">
+    <div class="vid y916"><video muted loop playsinline preload="none" data-poster="v/inmod_S3.webp" data-oto><source src="v/inmod_S3.mp4" type="video/mp4"></video></div>
+    <div class="vid y916"><video muted loop playsinline preload="none" data-poster="v/inmod_S4.webp" data-oto><source src="v/inmod_S4.mp4" type="video/mp4"></video></div>
+    <div class="vid y916"><video muted loop playsinline preload="none" data-poster="v/inmod_S6.webp" data-oto><source src="v/inmod_S6.mp4" type="video/mp4"></video></div>
+  </div>
+  <div class="izgara gor ust-bosluk" style="grid-template-columns:2fr 1fr;align-items:start">
+    <div><div class="vid y169"><video controls playsinline preload="none" data-poster="v/inmod_hero.webp"><source src="v/inmod_hero.mp4" type="video/mp4"></video></div><p class="alt-yazi" style="color:#9C9C97">Tanıtım filmi · stüdyodan ekrana</p></div>
+    <div><div class="vid y916" style="max-width:360px"><video controls playsinline preload="none" data-poster="v/inmod_reels.webp"><source src="v/inmod_reels.mp4" type="video/mp4"></video></div><p class="alt-yazi" style="color:#9C9C97">Reels · beyaz ceket</p></div>
+  </div>
+</div></section>
+
+<section><div class="kap">
+  <div class="bas gor"><h2>Tek üründen kampanya serisi</h2><p class="giris">Tam boy, duruş, yakın ve detay pozları; tesettür koleksiyonları dahil.</p></div>
+  <div class="izgara i5 gor">
+    <div class="kare y916" data-g="kampanya"><img loading="lazy" src="k/im_tes_kart.webp" alt="Ürün kartı"></div>
+    <div class="kare y916" data-g="kampanya"><img loading="lazy" src="k/im_tes_duvar.webp" alt="Duruş"></div>
+    <div class="kare y916" data-g="kampanya"><img loading="lazy" src="k/im_tes_yaka.webp" alt="Yakın"></div>
+    <div class="kare y916" data-g="kampanya"><img loading="lazy" src="k/im_payet_detay.webp" alt="Detay" style="object-position:50% 20%"></div>
+    <div class="kare y916" data-g="kampanya"><img loading="lazy" src="k/im_tul_s8.webp" alt="Tül etek"></div>
+  </div>
+</div></section>
+
+<section class="zemin"><div class="kap">
+  <div class="bas gor"><h2>14 hazır mekân, 5 model</h2><p class="giris">Her koleksiyon için uygun sahne; seçilen model tüm çekimlerde aynı kalır.</p></div>
+  <div class="izgara i6 gor" id="mekanlar"></div>
+  <div class="izgara i5 ust-bosluk gor" style="margin-top:18px">
+    <div class="kare y34" data-g="model"><img loading="lazy" src="k/im_model_sinem_ust.webp" alt="Sinem"></div>
+    <div class="kare y34" data-g="model"><img loading="lazy" src="k/im_model_derin_ust.webp" alt="Derin"></div>
+    <div class="kare y34" data-g="model"><img loading="lazy" src="k/im_model_eylul_ust.webp" alt="Eylül"></div>
+    <div class="kare y34" data-g="model"><img loading="lazy" src="k/im_model_melis_ust.webp" alt="Melis"></div>
+    <div class="kare y34" data-g="model"><img loading="lazy" src="k/im_model_naz_ust.webp" alt="Naz"></div>
+  </div>
+</div></section>
+
+<section><div class="kap">
+  <div class="izgara gor" style="grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center">
+    <div><h2>Teslimden önce her kare kontrol edilir</h2>
+      <div class="ust-bosluk" style="margin-top:36px">
+        <div class="satir"><b>Gelen fotoğraf</b><span>Netlik, ışık ve ürünün okunurluğu ölçülür.</span></div>
+        <div class="satir"><b>Mekân</b><span>Sahnede istenmeyen kişi, yazı ya da marka olmadığı denetlenir.</span></div>
+        <div class="satir"><b>Ürüne sadakat</b><span>Rengi, kalıbı ve detayları aslıyla karşılaştırılır.</span></div>
+      </div></div>
+    <div><div class="mesaj"><b>INMOD'UN BUTİĞE GÖNDERDİĞİ GERÇEK BİR DÜZELTME MESAJI</b>“Kıyafet buruşuk durduğu için kalıbı tam okunmuyor. Askıya asıp biraz düzelttikten sonra çekebilir misiniz? Arka plan kalabalık. Düz bir duvar ya da beyaz bir çarşaf önünde çekerseniz ürün çok daha net görünür.”</div>
+      <div class="sayilar ust-bosluk" style="margin-top:44px"><div><div class="sayi" style="font-size:clamp(70px,9vw,140px)">90</div><p>parça üretildi</p></div><div><div class="sayi" style="font-size:clamp(70px,9vw,140px);color:#9FAD00">37</div><p>tanesi video</p></div></div>
+      <p class="not">Kaynak: InMod örnek çalışmalar sayfası</p></div>
+  </div>
+  <div class="sonraki"><button data-sonraki>Sonraki: DengChat ↓</button></div>
+</div></section>
+
+<!-- DENGCHAT -->
+<section class="koyu" id="dengchat"><div class="kap">
+  <div class="izgara gor" style="grid-template-columns:1.2fr 1fr;gap:clamp(30px,6vw,90px);align-items:center">
+    <div><div class="etiket">04 · HİZMET İŞLETMELERİ</div><h2 style="font-size:clamp(56px,9vw,140px);margin:16px 0 18px">DengChat</h2><p class="giris">Instagram ve Facebook mesajlarını 7/24 yanıtlayan yapay zekâ asistanı. İşletmenin bilgileriyle, işletmenin diliyle.</p>
+      <div class="ust-bosluk" style="margin-top:44px">
+        <div class="satir"><b>Anında yanıt</b><span>Gece, hafta sonu, bayramda; işletmenin kendi bilgileriyle.</span></div>
+        <div class="satir"><b>Müşteri adayı</b><span>Ad, telefon ve ilgi alanı panele düşer; ekip bilgilendirilir.</span></div>
+        <div class="satir"><b>Yetkiliye devir</b><span>Müşteri isterse asistan susar, konuşma ekibe geçer.</span></div>
+        <div class="satir"><b>Uydurmaz</b><span>Bilmediği konuda tahmin yürütmez, ekibe yönlendirir.</span></div>
+      </div></div>
+    <div class="tel" style="max-width:340px;justify-self:center;width:100%"><div><div class="dmekran">
+      <div class="igust"><div class="av">Ö</div><div><b>ornek.guzellik</b><small>Yapay zekâ asistanı</small></div></div>
+      <div class="dm"><span class="saat">Bugün 23:47</span>
+        <div class="b m">Merhaba, cilt bakımı ne kadar sürüyor? Cumartesi açık mısınız?</div>
+        <div class="b a">Merhaba! Klasik cilt bakımımız yaklaşık 60 dakika sürüyor. Cumartesi 10:00–19:00 arası açığız 🌿</div>
+        <div class="b a">Size uygun saati ayarlamamız için adınızı ve telefon numaranızı bırakabilir misiniz?</div>
+        <div class="b m">Ayşe, 0532 000 00 00</div>
+        <div class="b a">Teşekkürler Ayşe Hanım! Ekibimiz sabah sizi arayacak.</div></div></div></div></div>
+  </div>
+  <p class="not" style="color:#8F8F8A">Örnek konuşma</p>
+</div></section>
+
+<section class="zemin"><div class="kap">
+  <div class="bas gor"><h2>Müşterinin yazdığı her yerde</h2><p class="giris">Aynı asistan, aynı bilgiler; üç kanalda.</p></div>
+  <div class="kanallar gor">
+    <div class="kanal"><h4>Instagram mesajları</h4><p>Direkt mesajla gelen sorular anında yanıtlanır.</p><div class="dm"><div class="b m">Bu elbisenin M bedeni var mı?</div><div class="b a">Var, M ve L stokta. Mağazadan ya da sitemizden alabilirsiniz.</div></div></div>
+    <div class="kanal"><h4>Instagram yorumları</h4><p>“Fiyat?” yazanlara yanıt verir, detayı özel mesajla gönderir.</p><div class="dm"><div class="b m">fiyat nedir? 😍</div><div class="b a">Merhaba Melis, detayları mesaj olarak gönderdik 💌</div></div></div>
+    <div class="kanal"><h4>Facebook Messenger</h4><p>Sayfaya gelen mesajlar aynı asistanla karşılanır.</p><div class="dm"><div class="b m">Pazar günü açık mısınız?</div><div class="b a">Pazar 11:00–17:00 arası açığız.</div></div></div>
+  </div>
+  <div class="izgara gor ust-bosluk" style="grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,60px);align-items:center">
+    <div><h3>Gerektiğinde sözü size bırakır</h3><p class="giris" style="margin-top:16px">Müşteri yetkili isterse asistan susar ve size haber verir. Siz hesaptan yazmaya başladığınızda da kendiliğinden geri çekilir.</p>
+      <div class="tablo" style="margin-top:28px"><div><span>AD</span><span>TELEFON</span><span>İLGİLENDİĞİ</span><span>DURUM</span></div><div><span>Ayşe K.</span><span>0532 ••• 00</span><span>Lazer, 6 seans</span><span><span class="rozet">Yeni</span></span></div><div><span>Mert Y.</span><span>0544 ••• 18</span><span>Cilt bakımı</span><span><span class="rozet">Yeni</span></span></div><div><span>Zeynep A.</span><span>0505 ••• 42</span><span>Kalıcı makyaj</span><span><span class="rozet g">Arandı</span></span></div></div>
+      <p class="not">Temsili görünüm</p></div>
+    <div class="tel" style="max-width:320px;justify-self:center;width:100%"><div><div class="dmekran">
+      <div class="igust"><div class="av">Ö</div><div><b>ornek.guzellik</b><small>Yapay zekâ asistanı</small></div></div>
+      <div class="dm"><div class="b m">Geçen haftaki işlemle ilgili bir sorunum var, yetkiliyle görüşebilir miyim?</div>
+        <div class="b a">Elbette, sizi hemen ekibimize aktarıyorum.</div>
+        <span class="sistem">Asistan durdu · İşletmeye bildirim gitti</span>
+        <div class="b k">Merhaba, ben Selin. Yaşadığınız sorunu dinliyorum 🙏</div></div></div></div></div>
+  </div>
+  <div class="sonraki"><button data-sonraki>Sonraki: Dijital ↓</button></div>
+</div></section>
+
+<!-- DİJİTAL -->
+<section id="dijital"><div class="kap">
+  <div class="bas gor"><div><div class="etiket">05 · WEB VE MOBİL</div><h2 style="margin-top:12px">Web siteleri ve mobil uygulamalar</h2></div><p class="giris">Kurumsal siteden mobil uygulamaya; tasarımı ve yazılımı aynı ekipte.</p></div>
+  <div class="izgara gor" style="grid-template-columns:2fr 1fr;gap:clamp(16px,3vw,40px);align-items:center">
+    <div><div class="tarayici" data-g="dijital" style="cursor:zoom-in"><div class="cubuk"><i></i><i></i><i></i><span>elnarelektronik.com</span></div><img loading="lazy" src="k/w_elnar.webp" alt="Elnar Elektronik"></div><p class="alt-yazi">Elnar Elektronik · yetkili bayi web sitesi</p></div>
+    <div class="tel" style="max-width:280px;justify-self:center;width:100%"><div data-g="dijital" style="cursor:zoom-in"><img loading="lazy" src="k/w_elnar_m.webp" style="object-position:50% 0" alt="Elnar mobil"></div></div>
+  </div>
+  <div class="teller ust-bosluk gor">
+    <div class="tel"><div data-g="mode" style="cursor:zoom-in"><img loading="lazy" src="k/mode_welcome.webp" alt="MODE"></div></div>
+    <div class="tel"><div data-g="mode" style="cursor:zoom-in"><img loading="lazy" src="k/mode_journey.webp" alt="MODE"></div></div>
+    <div class="tel"><div data-g="mode" style="cursor:zoom-in"><img loading="lazy" src="k/mode_tanidi.webp" alt="MODE"></div></div>
+    <div class="tel"><div data-g="mode" style="cursor:zoom-in"><img loading="lazy" src="k/mode_firstoutfit.webp" alt="MODE"></div></div>
+  </div>
+  <p class="alt-yazi" style="text-align:center">MODE · kişisel stil uygulaması (iOS)</p>
+</div></section>
+
+<!-- SEKTÖRLER -->
+<section class="zemin" id="sektorler"><div class="kap">
+  <div class="bas gor"><h2>Her sektöre uyarlanan yaklaşım</h2><p class="giris">Aynı ekip, aynı süreç; ihtiyaca göre farklı araçlar.</p></div>
+  <div class="sek gor">
+    <article><div class="kare"><img loading="lazy" src="k/dn_j1_durum_ucan.webp" alt=""></div><div class="ic"><h4>Yeme-içme ve franchise</h4><p>Kimlik, mekân, ambalaj, menü, web, franchise kiti.</p><small>DÖNERUS</small></div></article>
+    <article><div class="kare"><img loading="lazy" src="k/ay_rev_03.webp" alt=""></div><div class="ic"><h4>Ev ve dekorasyon</h4><p>Ürün görselleştirme, e-ticaret ve pazar yeri görselleri.</p><small>TAŞ AYNA</small></div></article>
+    <article><div class="kare"><img loading="lazy" src="k/im_tes_duvar.webp" style="object-position:50% 25%" alt=""></div><div class="ic"><h4>Moda ve tekstil</h4><p>Manken çekimi, kampanya görseli, ürün videosu.</p><small>INMOD</small></div></article>
+    <article><div class="kare" style="background:var(--koyu);display:grid;place-items:center"><div class="dm" style="width:78%"><div class="b m">Pazar açık mısınız?</div><div class="b a">Pazar 11:00–17:00 açığız.</div></div></div><div class="ic"><h4>Güzellik, sağlık, spor</h4><p>7/24 mesaj yanıtı, müşteri adayı toplama.</p><small>DENGCHAT</small></div></article>
+    <article><div class="kare"><img loading="lazy" src="k/w_elnar.webp" style="object-position:50% 0" alt=""></div><div class="ic"><h4>Perakende ve elektronik</h4><p>Kurumsal web sitesi ve ürün vitrini.</p><small>ELNAR ELEKTRONİK</small></div></article>
+    <article><div class="kare"><img loading="lazy" src="k/mode_home.webp" style="object-position:50% 20%" alt=""></div><div class="ic"><h4>Teknoloji ve uygulama</h4><p>Mobil uygulama tasarımı ve geliştirme.</p><small>MODE</small></div></article>
+  </div>
+</div></section>
+
+<section class="koyu"><div class="kap">
+  <h2 class="gor">Neden tek elden?</h2>
+  <div class="ust-bosluk gor" style="margin-top:44px">
+    <div class="satir"><b>Tek muhatap</b><span>Kimlikten tabelaya, web sitesinden mesaj asistanına; tek ekip, tek takvim, tek sorumlu.</span></div>
+    <div class="satir"><b>Önce gör, sonra üret</b><span>Mekân, ambalaj ve ürün, üretime geçmeden gerçekçi görsellerle onaylanır.</span></div>
+    <div class="satir"><b>Ölçeklenebilir üretim</b><span>Yüzlerce ürün görseli ve video, aynı kalite kontrolünden geçerek kısa sürede hazırlanır.</span></div>
+    <div class="satir"><b>Sahada uygulama</b><span>Tasarlanan her şey, 22 yıllık üretim ve montaj deneyimiyle sahaya taşınır.</span></div>
+  </div>
+</div></section>
+
+<section class="koyu" style="padding-top:0"><div class="kap">
+  <div class="izgara gor" style="grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center">
+    <div><h1 style="font-size:clamp(44px,6.5vw,104px)">Markanızı birlikte belirginleştirelim.</h1><p style="font-size:clamp(30px,3vw,48px);font-weight:800;margin-top:40px">belirgin.com</p></div>
+    <div class="izgara i2">
+      <div class="kare y11" data-g="son"><img loading="lazy" src="k/dn_fuar.webp" alt=""></div><div class="kare y11" data-g="son"><img loading="lazy" src="k/im_ceket_butik.webp" style="object-position:50% 25%" alt=""></div>
+      <div class="kare y11" data-g="son"><img loading="lazy" src="k/ay_rev_02.webp" alt=""></div><div class="kare y11" data-g="son"><img loading="lazy" src="k/dn_ic_mekan.webp" alt=""></div>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer><span>© 2026 Belirgin Marka İletişimi</span><span>Dönerus ve diğer markalara ait çalışmalar tasarım önerisidir; sohbet ve panel örnekleri temsilidir.</span></footer>
+
+<div class="buyutec" id="buyutec" aria-hidden="true"><button class="kapat" aria-label="Kapat">✕</button><button class="ger" aria-label="Önceki">‹</button><img alt=""><button class="ile" aria-label="Sonraki">›</button><p></p></div>
+
+<script>
+
+try{
+var DESEN=["ay_k000", "ay_k001", "ay_k002", "ay_k003", "ay_k004", "ay_k005", "ay_k007", "ay_k008", "ay_k009", "ay_k010", "ay_k011", "ay_k012", "ay_k014", "ay_k015", "ay_k016", "ay_k017", "ay_k018", "ay_k019", "ay_k020", "ay_k021", "ay_k022", "ay_k023", "ay_k024", "ay_k025", "ay_k026", "ay_k027", "ay_k028", "ay_k029", "ay_k030", "ay_k031", "ay_k032", "ay_k033", "ay_k034", "ay_k035", "ay_k036", "ay_k037", "ay_k038", "ay_k039", "ay_k040", "ay_k041", "ay_k042", "ay_k043", "ay_k044", "ay_k045", "ay_k046", "ay_k047", "ay_k049", "ay_k050", "ay_k051", "ay_k052", "ay_k053", "ay_k054", "ay_k055", "ay_k056", "ay_k057", "ay_k058", "ay_k059", "ay_k061", "ay_k062", "ay_k063", "ay_k064", "ay_k065", "ay_k066", "ay_k068", "ay_k069", "ay_k070", "ay_k071", "ay_k072", "ay_k073", "ay_k075", "ay_k076", "ay_k077", "ay_k078", "ay_k079", "ay_k080", "ay_k081", "ay_k082", "ay_k083", "ay_k084", "ay_k085", "ay_k086", "ay_k087", "ay_k088", "ay_k089", "ay_k090", "ay_k093", "ay_k094", "ay_k095", "ay_k097", "ay_k098", "ay_k099", "ay_k100", "ay_k101", "ay_k102", "ay_k103", "ay_k104"];
+document.getElementById('desen').innerHTML=DESEN.map(n=>`<img loading="lazy" src="k/${n}.webp" alt="">`).join('');
+const MEKAN=[['sokak_gunduz','Sokak'],['aksam_sehir','Akşam şehir'],['butik_zengin','Butik'],['butik_sade','Sade butik'],['butik_ayna','Aynalı butik'],['loft_beton','Loft'],['otel_lobi','Otel lobisi'],['kafe_pencere','Kafe'],['ev_oturma','Ev'],['bahce_yesil','Bahçe'],['merdiven_tas','Taş merdiven'],['sahil_iskele','Sahil'],['studyo_bej','Bej stüdyo'],['studyo_beyaz','Beyaz stüdyo'],['butik_zengin','Butik'],['sokak_gunduz','Sokak']].slice(0,12);
+document.getElementById('mekanlar').innerHTML=MEKAN.map(([n,a])=>`<div><div class="kare y916" data-g="mekanlar"><img loading="lazy" src="k/im_mekan_${n}.webp" alt="${a}"></div><p class="alt-yazi">${a}</p></div>`).join('');
+}catch(h){console.warn('bölüm hatası',h)}
+// ana banner: ekrana göre video
+try{
+(()=>{const v=document.getElementById('kahVid'),ps=document.getElementById('kahPoster');const m=innerWidth<700;if(m)ps.src='v/kahraman_m.webp';
+  const basla=()=>{v.src=m?'v/kahraman_m.mp4':'v/kahraman.mp4';v.addEventListener('playing',()=>{ps.style.transition='opacity .6s';ps.style.opacity=0},{once:true});const p=v.play();p&&p.catch(()=>{})};
+  if(document.readyState==='complete')setTimeout(basla,200);else addEventListener('load',()=>setTimeout(basla,200))})();
+}catch(h){console.warn('bölüm hatası',h)}
+// sayaçlar
+try{
+const sio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,h=+el.dataset.say,t0=performance.now();const f=t=>{const p=Math.min((t-t0)/1400,1);el.textContent=Math.round(h*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f);sio.unobserve(el)}),{threshold:.6});
+document.querySelectorAll('[data-say]').forEach(e=>sio.observe(e));
+}catch(h){console.warn('bölüm hatası',h)}
+// görünme
+try{
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('var');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.gor').forEach(e=>io.observe(e));
+}catch(h){console.warn('bölüm hatası',h)}
+// otomatik videolar: görünürken oynar
+try{
+const pio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const v=e.target;if(v.dataset.poster)v.poster=v.dataset.poster;pio.unobserve(v)}}),{rootMargin:'600px 0px'});
+document.querySelectorAll('video[data-poster]').forEach(v=>pio.observe(v));
+const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.preload='auto';const p=v.play();p&&p.catch(()=>{})}else v.pause()}),{threshold:.35});
+document.querySelectorAll('video[data-oto]').forEach(v=>vio.observe(v));
+}catch(h){console.warn('bölüm hatası',h)}
+// ilerleme çubuğu ve aktif menü
+try{
+const bar=document.getElementById('ilerleme'),linkler=[...document.querySelectorAll('.ust nav a')];
+const bolumler=linkler.map(a=>document.querySelector(a.getAttribute('href')));
+addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+  let ak=-1;bolumler.forEach((b,i)=>{if(b&&b.getBoundingClientRect().top<innerHeight*.4)ak=i});linkler.forEach((a,i)=>a.classList.toggle('aktif',i===ak))},{passive:true});
+}catch(h){console.warn('bölüm hatası',h)}
+// sonraki düğmeleri ve klavye
+try{
+var duraklar=[...document.querySelectorAll('main>section')];
+function git(yon){const y=scrollY+70;let hedef=yon>0?duraklar.find(s=>s.offsetTop>y+5):[...duraklar].reverse().find(s=>s.offsetTop<y-5);if(hedef)scrollTo({top:hedef.offsetTop-64,behavior:'smooth'})}
+document.querySelectorAll('[data-sonraki]').forEach(b=>b.addEventListener('click',()=>{const s=b.closest('section');let n=s.nextElementSibling;if(n)scrollTo({top:n.offsetTop-64,behavior:'smooth'})}));
+addEventListener('keydown',e=>{if(bk.classList.contains('acik')){if(e.key==='Escape')kapat();if(e.key==='ArrowRight')adim(1);if(e.key==='ArrowLeft')adim(-1);return}
+  if(['ArrowDown','PageDown'].includes(e.key)||e.key===' '){e.preventDefault();git(1)}if(['ArrowUp','PageUp'].includes(e.key)){e.preventDefault();git(-1)}});
+}catch(h){console.warn('bölüm hatası',h)}
+// büyüteç (geçmişe dokunmaz, sayfayı kilitlemez)
+try{
+var bk=document.getElementById('buyutec'),bi=bk.querySelector('img'),bp=bk.querySelector('p');var grup=[],idx=0;
+function goster(){const im=grup[idx];bi.src=(im.currentSrc||im.src).replace('/k/','/a/');bp.textContent=(im.alt?im.alt+' · ':'')+(idx+1)+' / '+grup.length}
+function ac(el){const g=el.dataset.g;grup=[...document.querySelectorAll(`[data-g="${g}"] img`)];idx=grup.indexOf(el.querySelector('img'));if(idx<0)idx=0;goster();bk.classList.add('acik');bk.setAttribute('aria-hidden','false')}
+function kapat(){bk.classList.remove('acik');bk.setAttribute('aria-hidden','true')}
+function adim(n){idx=(idx+n+grup.length)%grup.length;goster()}
+document.addEventListener('click',e=>{const k=e.target.closest('[data-g]');if(k&&!bk.contains(k))ac(k)});
+bk.querySelector('.kapat').onclick=kapat;bk.querySelector('.ger').onclick=e=>{e.stopPropagation();adim(-1)};bk.querySelector('.ile').onclick=e=>{e.stopPropagation();adim(1)};
+bk.addEventListener('click',e=>{if(e.target===bk)kapat()});
+let tx=0;bk.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});bk.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)adim(d<0?1:-1)});
+
+}catch(h){console.warn('bölüm hatası',h)}
+// emniyet: içerik her durumda görünür olsun
+setTimeout(function(){document.querySelectorAll('.gor').forEach(function(e){e.classList.add('var')})},3500);
+// sayfa içi bağlantılar: adres çubuğuna # eklemeden kaydır (geri tuşu sayfadan çıkar)
+try{document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var h=document.querySelector(a.getAttribute('href'));if(!h)return;e.preventDefault();scrollTo({top:h.getBoundingClientRect().top+scrollY-64,behavior:'smooth'})});}catch(h){}
+</script>
+</body></html>
